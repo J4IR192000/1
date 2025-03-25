@@ -133,12 +133,18 @@ body {
     margin: 0 10px;
 }
 
+.social-button:hover,.social-button:hover a {
+    background: #f1f1f1;
+    color: #000;
+}
+
 .social-button a {
     color: #f1f1f1;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
+
 .img-icon {
     width: 20px;
     height: 20px;
