@@ -43,6 +43,8 @@ nav a:hover {
     color: #f1f1f1;
 }
 
+
+
 header {
     background: linear-gradient(40deg, #500000, #bb0101 40%);
     width: 150px;
@@ -178,11 +180,20 @@ body {
     min-width: 100px;
 }
 
-.div-3 h1{
+.subtittle{
     background: #1a1a1a;
     border-radius: 5px;
     width: 76%;
     font-size: 20px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.subsubtittle{
+    text-align: center;
+    border-radius: 5px;
+    width: auto;
+    font-size: 15px;
     font-weight: bold;
     color: #f1f1f1;
 }
@@ -199,4 +210,58 @@ body {
     font-family:  serif;
     padding: 1px 40px;
     font-style: italic;
+}
+
+.div-tools{
+    border:#f1f1f1 1px solid;
+    padding: 5px 10px;
+}
+ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row; /* Por defecto, los elementos se disponen en una fila */
+
+    border-radius: 5px;
+    font-family: serif;
+    padding: 1px 40px;
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+
+.img-icon-list {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Media query para cambiar la disposición de los elementos <li> cuando la pantalla es más delgada */
+@media (max-width: 700px) {
+    ul {
+        display: grid; /* Cambia a grid layout */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
+        gap: 10px; /* Espacio entre los elementos */
+        justify-items: center; /* Centra los elementos en las columnas */
+    }
+
+    li {
+        margin: 0; /* Ajusta el margen para los elementos en columna */
+    }
+
+    .img-icon-list {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
