@@ -96,7 +96,7 @@ body {
     background: #1a1a1a;
     color: #f1f1f1;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
+    
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -123,6 +123,7 @@ body {
     margin-top: 20px;
 }
 
+/* Estilos generales para social-button */
 .social-button {
     display: flex;
     align-items: center;
@@ -155,6 +156,17 @@ body {
 .social-button p {
     margin: 0; /* Elimina el margen del párrafo */
 }
+
+/* Media query para ocultar los <p> cuando la pantalla es más delgada */
+@media (max-width: 600px) {
+    .social-button p {
+        display: none;
+    }
+    .img-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
 
 .div-1, .div-3{
     background: #1a1a1a;
