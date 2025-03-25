@@ -156,13 +156,22 @@ body {
     margin: 0; /* Elimina el margen del párrafo */
 }
 
-.div-1{
+.div-1, .div-3{
     background: #1a1a1a;
     border-radius: 5px;
     width: 75%;
     padding: 1px 7px;
     margin: 0 auto;
     min-width: 100px;
+}
+
+.div-3 h1{
+    background: #1a1a1a;
+    border-radius: 5px;
+    width: 76%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1f1f1;
 }
 
 .div-2{
@@ -173,6 +182,7 @@ body {
 
 .div-2{
     background-color: #500000;
+    border-radius: 5px;
     font-family:  serif;
     padding: 1px 40px;
     font-style: italic;
