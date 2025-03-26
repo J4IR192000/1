@@ -1,3 +1,4 @@
+/*-------------------------------------------------------NAV-----------------------------------------------------------------------------------------*/
 nav {
     background: #bb0101;
     width: 100%;
@@ -15,6 +16,9 @@ nav {
 }
 a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav  a {    
     color: #000;
@@ -44,7 +48,7 @@ nav a:hover {
 }
 
 
-
+/*----------------------------------------------------------HEADER--------------------------------------------------------------------------------------*/
 header {
     background: linear-gradient(40deg, #500000, #bb0101 40%);
     width: 150px;
@@ -83,17 +87,7 @@ img {
     
 }
 
-.name{
-    background: #1a1a1a;
-    border-radius: 5px;
-    width: 76%;
-    font-size: 30px;
-    font-weight: bold;
-    color: #f1f1f1;
-    text-align: center;
-    margin: 10px auto;
-}
-
+/*---------------------------------------------------------------------BODY---------------------------------------------------------------------------*/
 body {
     background: #1a1a1a;
     color: #f1f1f1;
@@ -104,7 +98,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
     position: relative;
     min-width: 320px;
 }
@@ -132,7 +125,7 @@ body {
     border: none;
     */
 }
-
+/*--------------------------------------------------------------------SOCIAL BUTTONS----------------------------------------------------------------------------*/
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -185,8 +178,19 @@ body {
         margin-left: 5px;
     }
 }
-
-.div-1, .div-3, .div-4{
+/*------------------------------------------------------------------NAME------------------------------------------------------------------------------*/
+.name{
+    background: #1a1a1a;
+    border-radius: 5px;
+    width: 76%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 10px auto;
+}
+/*-------------------------------------------------------------------DIVS-----------------------------------------------------------------------------*/
+.div-1, .div-3, .div-4, .div-5{
     background: #1a1a1a;
     border-radius: 5px;
     width: 75%;
@@ -225,6 +229,67 @@ body {
     font-style: italic;
 }
 
+/*---------------------------------------------------------------TIMELAPSE---------------------------------------------------------------------------------*/
+.div-timelapse ul li{
+    border: #f1f1f1 1px solid;
+    padding: 10px 10px;
+    width: 200px;
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.div-timelapse ul li a{
+    color: #f1f1f1;
+    border: #f1f1f1 1px solid;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.div-timelapse ul li a:hover{
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+li small{
+    display: flex;
+    text-align: center;
+}
+
+/* Media query para cambiar la disposición de los elementos <li> cuando la pantalla es más delgada */
+@media (max-width: 700px) {
+    .div-timelapse ul{
+        display: grid; /* Cambia a grid layout */
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas de igual ancho */
+        gap: 10px; /* Espacio entre los elementos */
+        justify-items: center; /* Centra los elementos en las columnas */
+        margin: 0 -100px;
+    }
+
+    li {
+        width: 100%;
+        height: auto;
+        margin: 0; /* Ajusta el margen para los elementos en columna */
+    }
+
+    .img-icon-list {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+.img-icon-cert {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10 auto;
+    transition: all 0.5s;
+}
+/*----------------------------------------------------------------DIV TOOLS--------------------------------------------------------------------------------*/
 .div-tools{
     border:#f1f1f1 1px solid;
     border-radius: 5px;
@@ -247,6 +312,10 @@ li {
     margin: 0 10px;
 }
 
+li p{
+    margin: 0;
+    text-align: center;
+}
 
 .img-icon-list {
     width: 20px;
@@ -255,6 +324,11 @@ li {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    transition: all 0.5s;
+}
+.img-icon-list:hover {
+    width: 40px;
+    height: 40px;
 }
 
 /* Media query para cambiar la disposición de los elementos <li> cuando la pantalla es más delgada */
@@ -279,7 +353,7 @@ li {
         margin: 0 auto;
     }
 }
-
+/*--------------------------------------------------------------DIVS ANIMATION----------------------------------------------------------------------------------*/
 @keyframes show{
     from{
         opacity: 0;
@@ -305,7 +379,7 @@ li {
     /* Especifica el rango de la animación: 
        - 'entry 25%' significa que la animación comenzará cuando el 25% del elemento sea visible.
        - 'cover 50%' significa que la animación se completará cuando el 50% del elemento esté cubierto. */
-    animation-range: entry 30% cover 40%;
+    animation-range: entry 25% cover 50%;
     z-index: 1;
 }
 
@@ -328,3 +402,18 @@ li {
         z-index: 1;
     }
 } 
+/*---------------------------------------------------------------FOOTER---------------------------------------------------------------------------------*/
+footer{
+    background: #420101;
+    width: 100%;
+    height: 100px;
+    border-top: #f1f1f1 1px solid;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Ajusta el padding si es necesario */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
