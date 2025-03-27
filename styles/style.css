@@ -11,18 +11,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px; /* Ajusta el padding si es necesario */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    padding: 0 20px;
+    /* Ajusta el padding si es necesario */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
 }
-a{
+
+a {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav  a {    
+
+nav a {
     color: #000;
 }
+
 nav a:hover {
     color: #f1f1f1;
 }
@@ -39,7 +44,8 @@ nav a:hover {
     justify-content: center;
     cursor: pointer;
     transition: background 0.5s;
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
 }
 
 .div-button:hover {
@@ -65,7 +71,8 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    animation: slideInDown 1s ease-out; /*llamamos a la animación*/
+    animation: slideInDown 1s ease-out;
+    /*llamamos a la animación*/
 }
 
 img {
@@ -75,23 +82,26 @@ img {
     margin-bottom: 10px;
 }
 
-@keyframes slideInDown {    /*Animación del logo de entrada*/
+@keyframes slideInDown {
+
+    /*Animación del logo de entrada*/
     from {
         transform: translate3d(-50%, -110%, 0);
         opacity: 0;
     }
+
     to {
-        transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%, 0, 0);
         opacity: 1;
     }
-    
+
 }
 
 /*---------------------------------------------------------------------BODY---------------------------------------------------------------------------*/
 body {
     background: #1a1a1a;
     color: #f1f1f1;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     margin: 0;
     padding: 0;
@@ -125,6 +135,7 @@ body {
     border: none;
     */
 }
+
 /*--------------------------------------------------------------------SOCIAL BUTTONS----------------------------------------------------------------------------*/
 .social-buttons {
     display: flex;
@@ -140,11 +151,13 @@ body {
     justify-content: center;
     border-radius: 10px;
     border: #fff 1px solid;
-    padding: 5px 20px; /* Ajusta el padding según sea necesario */
+    padding: 5px 20px;
+    /* Ajusta el padding según sea necesario */
     margin: 0 10px;
 }
 
-.social-button:hover,.social-button:hover a {
+.social-button:hover,
+.social-button:hover a {
     background: #f1f1f1;
     color: #000;
 }
@@ -160,11 +173,13 @@ body {
     width: 20px;
     height: 20px;
     margin-top: 5px;
-    margin-right: 5px; /* Añade un margen derecho para separar el icono del texto */
+    margin-right: 5px;
+    /* Añade un margen derecho para separar el icono del texto */
 }
 
 .social-button p {
-    margin: 0; /* Elimina el margen del párrafo */
+    margin: 0;
+    /* Elimina el margen del párrafo */
 }
 
 /* Media query para ocultar los <p> cuando la pantalla es más delgada */
@@ -172,14 +187,16 @@ body {
     .social-button p {
         display: none;
     }
+
     .img-icon {
         width: 30px;
         height: 30px;
         margin-left: 5px;
     }
 }
+
 /*------------------------------------------------------------------NAME------------------------------------------------------------------------------*/
-.name{
+.name {
     background: #1a1a1a;
     border-radius: 5px;
     width: 76%;
@@ -190,8 +207,12 @@ body {
     margin: 10px auto;
     padding: 5px;
 }
+
 /*-------------------------------------------------------------------DIVS-----------------------------------------------------------------------------*/
-.div-1, .div-3, .div-4, .div-5{
+.div-1,
+.div-3,
+.div-4,
+.div-5 {
     background: #1a1a1a;
     border-radius: 5px;
     width: 75%;
@@ -200,7 +221,7 @@ body {
     min-width: 100px;
 }
 
-.subtittle{
+.subtittle {
     background: #1a1a1a;
     border-radius: 5px;
     width: 76%;
@@ -209,29 +230,29 @@ body {
     color: #f1f1f1;
 }
 
-.subsubtittle{
+.subsubtittle {
     text-align: center;
     width: auto;
     font-size: 15px;
     color: #f1f1f1;
 }
 
-.div-2{
+.div-2 {
     width: 70%;
     margin: 0 auto;
     min-width: 100px;
 }
 
-.div-2{
+.div-2 {
     background-color: #500000;
     border-radius: 5px;
-    font-family:  serif;
+    font-family: serif;
     padding: 1px 40px;
     font-style: italic;
 }
 
 /*---------------------------------------------------------------TIMELAPSE---------------------------------------------------------------------------------*/
-.div-timelapse ul li{
+.div-timelapse ul li {
     border: #f1f1f1 1px solid;
     padding: 10px 10px;
     width: 200px;
@@ -239,37 +260,43 @@ body {
     margin: 0 10px;
 }
 
-.div-timelapse ul li a{
+.div-timelapse ul li a {
     color: #f1f1f1;
     border: #f1f1f1 1px solid;
     border-radius: 5px;
     padding: 5px 0;
 }
 
-.div-timelapse ul li a:hover{
+.div-timelapse ul li a:hover {
     background-color: #f1f1f1;
     color: #000;
 }
 
-li small{
+li small {
     display: flex;
     text-align: center;
 }
 
 /* Media query para cambiar la disposición de los elementos <li> cuando la pantalla es más delgada */
 @media (max-width: 700px) {
-    .div-timelapse ul{
-        display: grid; /* Cambia a grid layout */
-        grid-template-columns: repeat(1, 1fr); /* 2 columnas de igual ancho */
-        gap: 10px; /* Espacio entre los elementos */
-        justify-items: center; /* Centra los elementos en las columnas */
-        margin: 0 -100px;
+    .div-timelapse ul {
+        display: grid;
+        /* Cambia a grid layout */
+        grid-template-columns: repeat(1, 1fr);
+        /* 2 columnas de igual ancho */
+        gap: 10px;
+        /* Espacio entre los elementos */
+        justify-items: center;
+        /* Centra los elementos en las columnas */
+        margin: 0;
+        padding: 10px;
     }
 
     li {
         width: 100%;
         height: auto;
-        margin: 0; /* Ajusta el margen para los elementos en columna */
+        margin: 0;
+        /* Ajusta el margen para los elementos en columna */
     }
 
     .img-icon-list {
@@ -281,6 +308,7 @@ li small{
         margin: 0 auto;
     }
 }
+
 .img-icon-cert {
     width: 20px;
     height: 20px;
@@ -290,9 +318,9 @@ li small{
     margin: 10 auto;
     transition: all 0.5s;
 }
+
 /*----------------------------------------------------------------DIV TOOLS--------------------------------------------------------------------------------*/
-.div-tools{
-    border:#f1f1f1 1px solid;
+.div-tools {
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -301,7 +329,8 @@ ul {
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: row; /* Por defecto, los elementos se disponen en una fila */
+    flex-direction: row;
+    /* Por defecto, los elementos se disponen en una fila */
     border-radius: 5px;
     font-family: serif;
     padding: 1px 40px;
@@ -313,7 +342,7 @@ li {
     margin: 0 10px;
 }
 
-li p{
+li p {
     color: darkgrey;
     margin: 0;
     text-align: center;
@@ -328,6 +357,7 @@ li p{
     margin: 0 auto;
     transition: all 0.5s;
 }
+
 .img-icon-list:hover {
     width: 40px;
     height: 40px;
@@ -336,14 +366,19 @@ li p{
 /* Media query para cambiar la disposición de los elementos <li> cuando la pantalla es más delgada */
 @media (max-width: 700px) {
     ul {
-        display: grid; /* Cambia a grid layout */
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
-        gap: 10px; /* Espacio entre los elementos */
-        justify-items: center; /* Centra los elementos en las columnas */
+        display: grid;
+        /* Cambia a grid layout */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas de igual ancho */
+        gap: 10px;
+        /* Espacio entre los elementos */
+        justify-items: center;
+        /* Centra los elementos en las columnas */
     }
 
     li {
-        margin: 0; /* Ajusta el margen para los elementos en columna */
+        margin: 0;
+        /* Ajusta el margen para los elementos en columna */
     }
 
     .img-icon-list {
@@ -355,57 +390,45 @@ li p{
         margin: 0 auto;
     }
 }
+
 /*--------------------------------------------------------------DIVS ANIMATION----------------------------------------------------------------------------------*/
-@keyframes show{
-    from{
+/* 
+@keyframes show {
+    from {
         opacity: 0;
         scale: 10%;
     }
-    to{
+
+    to {
         opacity: 1;
         scale: 100%;
     }
 }
 
 .div-principal {
-    /* Define el nombre de la línea de tiempo de la vista para la animación */
     view-timeline-name: --reveal;
-    
-    /* Especifica el nombre de la animación que se aplicará */
     animation-name: show;
-    /* Asegura que la animación se mantenga en su estado final después de completarse */
     animation-fill-mode: both;
-
-    /* Define la línea de tiempo de la animación */
     animation-timeline: --reveal;
-    /* Especifica el rango de la animación: 
-       - 'entry 25%' significa que la animación comenzará cuando el 25% del elemento sea visible.
-       - 'cover 50%' significa que la animación se completará cuando el 50% del elemento esté cubierto. */
     animation-range: entry 25% cover 50%;
     z-index: 1;
 }
 
 @media (max-width: 700px) {
     .div-2 {
-        /* Define el nombre de la línea de tiempo de la vista para la animación */
         view-timeline-name: --reveal;
-        
-        /* Especifica el nombre de la animación que se aplicará */
         animation-name: show;
-        /* Asegura que la animación se mantenga en su estado final después de completarse */
         animation-fill-mode: both;
-    
-        /* Define la línea de tiempo de la animación */
         animation-timeline: --reveal;
-        /* Especifica el rango de la animación: 
-           - 'entry 25%' significa que la animación comenzará cuando el 25% del elemento sea visible.
-           - 'cover 50%' significa que la animación se completará cuando el 50% del elemento esté cubierto. */
         animation-range: entry 30% cover 40%;
         z-index: 1;
     }
-} 
+}
+*/
+
+
 /*---------------------------------------------------------------FOOTER---------------------------------------------------------------------------------*/
-footer{
+footer {
     background: #420101;
     width: 100%;
     height: 100px;
@@ -416,6 +439,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px; /* Ajusta el padding si es necesario */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    padding: 0 20px;
+    /* Ajusta el padding si es necesario */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
 }
