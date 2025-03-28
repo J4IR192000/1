@@ -528,7 +528,9 @@ li p {
         justify-items: center;
         /* Centra los elementos en las columnas */
     }
-
+    li p {
+        font-size: 10px;
+    }
 }
 @media (max-width: 300px) {
     .ul-skills{
@@ -541,7 +543,7 @@ li p {
         justify-items: center;
         /* Centra los elementos en las columnas */
     }
-
+    
 }
 
 /*--------------------------------------------------------------DIVS ANIMATION----------------------------------------------------------------------------------*/
